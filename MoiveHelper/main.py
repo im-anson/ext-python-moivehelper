@@ -5,10 +5,7 @@ import configparser
 import requests
 import re
 
-group_ids = dict() 
 
-config = configparser.ConfigParser()
-config.read('config.ini',encoding='utf-8')
 
 def extract_first_url(string):
     pattern = r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
